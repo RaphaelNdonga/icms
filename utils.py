@@ -1,10 +1,8 @@
 import json
 import math
-from playwright.sync_api import sync_playwright, Browser, Locator, Page
+from playwright.sync_api import sync_playwright, Browser, Locator, Page, TimeoutError
 import time
 from difflib import SequenceMatcher
-
-LOCATIONS_TO_EXCLUDE = ["CFS", "Full or Empty Yard", "Empty Only Yard"]
 
 def launch_browser() -> Browser:
     return sync_playwright().start().chromium.launch(headless=False, args=["--start-maximized"])
@@ -22,9 +20,10 @@ def icms_sign_in(browser:Browser):
 
     page.goto(icms_main_page)
 
-    page.wait_for_url(home_page, timeout=3)
+    try:
+        page.wait_for_url(home_page, timeout=3)
 
-    if page.url != home_page:
+    except TimeoutError:
         username = page.locator("#username")
         username.fill("CSAP000620077QX")
 
@@ -45,7 +44,7 @@ def icms_sign_in(browser:Browser):
         login_btn = page.locator("#loginBtn")
         login_btn.click()
 
-        page.wait_for_url(home_page, timeout=5)
+        page.wait_for_url(home_page)
 
         storage_state = context.storage_state()
 
