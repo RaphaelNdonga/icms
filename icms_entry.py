@@ -1,6 +1,5 @@
-import json
 import time
-from utils import launch_browser, icms_sign_in
+from utils import launch_browser, icms_sign_in, manual_type
 
 browser = launch_browser()
 page = icms_sign_in(browser)
@@ -21,21 +20,12 @@ iframe = page.frame_locator("iframe[refid=msg8066]")
 idf_no = iframe.locator("#regno").locator("input")
 idf_no.fill("26EMKIM000731139")
 
-click_out_section = iframe.locator(".w-label4").first
-
 custom_office = iframe.locator("#customOffice").locator("input").first
-custom_office.fill("EMK")
-click_out_section.click()
-time.sleep(1)
-custom_office.click()
+manual_type(page, custom_office, "EMK")
+
 
 national_subdivision = iframe.locator("#nationalSubdivision").locator("input").first
-national_subdivision.click()
-national_subdivision.fill("ICD")
-
-click_out_section.click()
-time.sleep(1)
-national_subdivision.click()
+manual_type(page, national_subdivision, "ICD")
 
 search_idf_btn = iframe.locator("#searchIDF")
 search_idf_btn.click()

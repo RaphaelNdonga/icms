@@ -1,6 +1,6 @@
 import json
 import math
-from playwright.sync_api import sync_playwright, Browser
+from playwright.sync_api import sync_playwright, Browser, Locator, Page
 import time
 from difflib import SequenceMatcher
 
@@ -53,3 +53,9 @@ def icms_sign_in(browser:Browser):
             json.dump(storage_state, f, indent=4)
 
     return page
+
+def manual_type(page:Page, input_el:Locator, word:str):
+    input_el.click()
+
+    for c in word:
+        page.keyboard.press(c)
