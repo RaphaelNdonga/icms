@@ -28,7 +28,7 @@ manual_type(page, national_subdivision, "ICD")
 search_idf_btn = iframe.locator("#searchIDF")
 search_idf_btn.click()
 
-idf_approval = iframe.locator("#Tbl7658").locator("#row0cell1Col9281")
+idf_approval = iframe.locator("#row0cell1Col9281")
 
 if idf_approval.text_content() == "IDF approved":
     idf_approval.click()
@@ -38,5 +38,26 @@ else:
 
 display_items = iframe.locator("#tbDisplayIS").locator(".iconBtn")
 display_items.click()
+
+iframe.locator("body").evaluate("window.scrollTo(0, document.body.scrollHeight);")
+
+time.sleep(3)
+
+scrollable_list = iframe.locator("#tableItems").locator(".VISUAL_DATACONTAINER")
+scrollable_list.evaluate("""
+    element => {
+        element.scrollTop = element.scrollHeight;
+    }
+""")
+
+time.sleep(3)
+
+select_switch = iframe.locator("#selectSwitch")
+select_switch.click()
+# try:
+#     first_item = iframe.locator("#row0cell0select")
+# except TimeoutError:
+#     print("IDF ITEMS NOT FOUND")
+#     browser.close()
 
 time.sleep(20)
