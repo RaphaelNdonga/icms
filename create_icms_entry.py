@@ -60,4 +60,7 @@ select_switch.click()
 #     print("IDF ITEMS NOT FOUND")
 #     browser.close()
 
+create_btn = iframe.locator("#tbProcess").locator(".iconBtn")
+create_btn.click()
+
 time.sleep(20)
