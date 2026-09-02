@@ -30,8 +30,8 @@ class BillOfLading:
 class Party:
     name: str
     address: str
-    country: str | None = None
-    country_code: str | None = None
+    country: str
+    country_code: str 
 
 
 @dataclass
@@ -61,32 +61,27 @@ class ImportDeclarationForm:
     mode_of_transport: str
 
 
-def get_commercial_invoice():
-    return Commercial_Invoice(**entry_docs["commercial_invoice"])
+COMMERCIAL_INVOICE = Commercial_Invoice(**entry_docs["commercial_invoice"])
 
 
-def get_insurance():
-    return Insurance(**entry_docs["insurance"])
+INSURANCE = Insurance(**entry_docs["insurance"])
 
 
-def get_bill_of_lading():
-    return BillOfLading(**entry_docs["bill_of_lading"])
+BILL_OF_LADING = BillOfLading(**entry_docs["bill_of_lading"])
 
 
-def get_certificate_of_origin():
-    certificate_data = entry_docs["certificate_of_origin"]
-    return CertificateOfOrigin(
-        consignor=Party(**certificate_data["consignor"]),
-        consignee=Party(**certificate_data["consignee"]),
+_certificate_data = entry_docs["certificate_of_origin"]
+
+CERTIFICATE_OF_ORIGIN = CertificateOfOrigin(
+        consignor=Party(**_certificate_data["consignor"]),
+        consignee=Party(**_certificate_data["consignee"]),
     )
 
-
-def get_import_declaration_form():
-    declaration_data = entry_docs["import_declaration_form"]
-    return ImportDeclarationForm(
-        no=declaration_data["no"],
-        pin=declaration_data["pin"],
-        importer=Importer(**declaration_data["importer"]),
-        seller=Seller(**declaration_data["seller"]),
-        mode_of_transport=declaration_data["mode_of_transport"],
+_declaration_data = entry_docs["import_declaration_form"]
+IMPORT_DECLARATION_FORM = ImportDeclarationForm(
+        no=_declaration_data["no"],
+        pin=_declaration_data["pin"],
+        importer=Importer(**_declaration_data["importer"]),
+        seller=Seller(**_declaration_data["seller"]),
+        mode_of_transport=_declaration_data["mode_of_transport"],
     )

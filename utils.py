@@ -58,3 +58,7 @@ def manual_type(page:Page, input_el:Locator, word:str):
 
     for c in word:
         page.keyboard.press(c)
+
+def manual_del(input_el:Locator):
+    input_el.click()
+    input_el.clear()
