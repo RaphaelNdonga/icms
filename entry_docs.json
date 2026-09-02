@@ -1,0 +1,44 @@
+{
+    "commercial_invoice": {
+        "incoterms": "CFR",
+        "currency": "USD",
+        "fob_amount": "68802",
+        "freight_amount": "13"
+    },
+
+    "insurance": {
+        "currency": "USD",
+        "amount": "13"
+    },
+
+    "bill_of_lading": {
+        "place_of_delivery": "ICD Embakasi, Kenya"
+    },
+    "certificate_of_origin": {
+        "consignor": {
+            "name": "DECORTAGE SDN BHD",
+            "address": "40160 SHAH ALAM SELANGOR MALAYSIA", 
+            "country": "Malaysia",
+            "country_code": "MY"
+        },
+        "consignee": {
+            "name": "Odds & Ends Limited",
+            "address": "11964 - 00400 NAIROBI KE", 
+            "country": "Kenya",
+            "country_code": "KE"
+        }
+    },
+    "import_declaration_form": {
+        "no": "26EMKIM000731139",
+        "pin": "P000617198L",
+        "importer": {
+            "name": "Odds & Ends Limited",
+            "address": "11964 - 00400 NAIROBI KE"
+        },
+        "seller": {
+            "name": "DECORTAGE SDN BHD",
+            "address": "40160 SHAH ALAM SELANGOR MALAYSIA"
+        },
+        "mode_of_transport": "Sea Transport"
+    }
+}
