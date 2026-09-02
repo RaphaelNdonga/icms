@@ -6,6 +6,8 @@ from entry_docs import COMMERCIAL_INVOICE, BILL_OF_LADING, IMPORT_DECLARATION_FO
 
 def details_tab(page:Page):
     iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
+    tab = iframe.locator(".tabs-back-div").locator("div[title=Details]")
+    tab.click()
     incoterm_code_input = iframe.locator("#sclist1099").locator("input").first
     manual_del(incoterm_code_input)
     manual_type(page, incoterm_code_input, COMMERCIAL_INVOICE.incoterms)
@@ -29,17 +31,21 @@ def details_tab(page:Page):
     insurance_invoiced_input = iframe.locator("#FieldInsuranceInvoiced").locator("input")
     insurance_invoiced_input.fill(INSURANCE.amount)
 
+    time.sleep(1)
+
     insurance_currency_input = iframe.locator("#sclistInsuranceInvoiced").locator("input").first
     manual_del(insurance_currency_input)
     manual_type(page, insurance_currency_input, INSURANCE.currency)
+
+    time.sleep(1)
 
     freight_currency_input = iframe.locator("#sclistFreightInvoiced").locator("input").first
     manual_del(freight_currency_input)
     manual_type(page, freight_currency_input, COMMERCIAL_INVOICE.currency)
 
-    valuation_method_input = iframe.locator("#b12_valuation_method").locator("input").first
-    manual_del(valuation_method_input)
-    manual_type(page, valuation_method_input, "1")
+    # valuation_method_input = iframe.locator("#b12_valuation_method").locator("input").first
+    # manual_del(valuation_method_input)
+    # manual_type(page, valuation_method_input, "1")
 
     consignor_name_input = iframe.locator("#Field8465").locator("input")
     consignor_name_input.fill(CERTIFICATE_OF_ORIGIN.consignor.name)
