@@ -57,3 +57,6 @@ def details_tab(page:Page):
     manual_del(consignor_nation_input)
     manual_type(page, consignor_nation_input, CERTIFICATE_OF_ORIGIN.consignor.country_code)
 
+    save_btn = iframe.locator("#tbSave").locator(".iconBtn")
+    save_btn.click()
+
