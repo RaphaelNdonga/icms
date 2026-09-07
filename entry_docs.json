@@ -33,12 +33,16 @@
         "pin": "P000617198L",
         "importer": {
             "name": "Odds & Ends Limited",
-            "address": "11964 - 00400 NAIROBI KE"
+            "address": "11964 - 00400 NAIROBI KE",
+            "county_code": "47"
         },
         "seller": {
             "name": "DECORTAGE SDN BHD",
             "address": "40160 SHAH ALAM SELANGOR MALAYSIA"
         },
-        "mode_of_transport": "Sea Transport"
+        "mode_of_transport": {
+            "name": "Sea Transport",
+            "code": "1"
+        }
     }
 }

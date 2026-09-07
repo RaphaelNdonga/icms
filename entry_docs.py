@@ -44,6 +44,7 @@ class CertificateOfOrigin:
 class Importer:
     name: str
     address: str
+    county_code: str
 
 
 @dataclass
@@ -51,6 +52,10 @@ class Seller:
     name: str
     address: str
 
+@dataclass
+class ModeOfTransport:
+    name: str
+    code: str
 
 @dataclass
 class ImportDeclarationForm:
@@ -58,7 +63,8 @@ class ImportDeclarationForm:
     pin: str
     importer: Importer
     seller: Seller
-    mode_of_transport: str
+    mode_of_transport: ModeOfTransport
+
 
 
 COMMERCIAL_INVOICE = Commercial_Invoice(**entry_docs["commercial_invoice"])
@@ -83,5 +89,5 @@ IMPORT_DECLARATION_FORM = ImportDeclarationForm(
         pin=_declaration_data["pin"],
         importer=Importer(**_declaration_data["importer"]),
         seller=Seller(**_declaration_data["seller"]),
-        mode_of_transport=_declaration_data["mode_of_transport"],
+        mode_of_transport=ModeOfTransport(**_declaration_data["mode_of_transport"]),
     )

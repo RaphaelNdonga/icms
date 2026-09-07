@@ -1,7 +1,6 @@
 import time
 from utils import manual_type, manual_del
 from playwright.sync_api import Page
-import json
 from entry_docs import COMMERCIAL_INVOICE, BILL_OF_LADING, IMPORT_DECLARATION_FORM, CERTIFICATE_OF_ORIGIN, INSURANCE
 
 def details_tab(page:Page):
@@ -58,5 +57,5 @@ def details_tab(page:Page):
     manual_type(page, consignor_nation_input, CERTIFICATE_OF_ORIGIN.consignor.country_code)
 
     save_btn = iframe.locator("#tbSave").locator(".iconBtn")
-    save_btn.click()
+    # save_btn.click()
 
