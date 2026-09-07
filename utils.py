@@ -28,7 +28,7 @@ def icms_sign_in(browser:Browser):
         username.fill("CSAP000620077QX")
 
         password = page.locator("#passwd")
-        password.fill("Wabwoba@2023")
+        password.fill("Wabwoba@2025")
 
         captcha_input = page.locator("#captcha")
 
@@ -43,6 +43,10 @@ def icms_sign_in(browser:Browser):
 
         login_btn = page.locator("#loginBtn")
         login_btn.click()
+
+        force_login_btn = page.locator("#confirmPopupId04062173726772337").locator("#OK")
+        if force_login_btn.is_visible():
+            force_login_btn.click()
 
         page.wait_for_url(home_page)
 
