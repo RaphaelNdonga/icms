@@ -3,7 +3,29 @@
         "incoterms": "CFR",
         "currency": "USD",
         "fob_amount": "68802",
-        "freight_amount": "13"
+        "freight_amount": "13",
+        "line_item": {
+            "number": "1",
+            "name": "Gloria King Bed 183 × 203 cm",
+            "qty": "28",
+            "unit_price": "279",
+            "total_price": "7812"
+        }
+    },
+
+    "packing_list": {
+        "line_item": {
+            "number": "1",
+            "name": "Gloria King Bed 183 × 203 cm",
+            "qty": "28",
+            "package": {
+                "type": "Carton",
+                "code": "CT",
+                "qty": "112"
+            },
+            "total_gross_mass": "3332",
+            "total_net_mass": "3108"
+        }
     },
 
     "insurance": {
