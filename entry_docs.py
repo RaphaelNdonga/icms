@@ -23,6 +23,7 @@ class Insurance:
 
 @dataclass
 class BillOfLading:
+    no: str
     place_of_delivery: str
 
 
@@ -65,7 +66,23 @@ class ImportDeclarationForm:
     seller: Seller
     mode_of_transport: ModeOfTransport
 
-
+@dataclass
+class LpDetails:
+    unique_lp_no: str
+    type_of_pkg: str
+    declared_qty: str
+    gross_wt: str
+    comdty_code: str
+    mrks_pkgs: str
+    desc_goods: str
+    un_dangerous: str
+    country_origin: str
+    net_wt: str
+    temp: str
+    volume: str
+    volume_unit: str
+    container_ref: str
+    remarks: str
 
 COMMERCIAL_INVOICE = Commercial_Invoice(**entry_docs["commercial_invoice"])
 

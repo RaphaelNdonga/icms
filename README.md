@@ -5,4 +5,4 @@ ctrl+shift+p -> add the path: C:\Users\Raphael\Python\playwright\icms\playwright
 
 console.log(document.querySelector('[refid=msg8066]')) -> to access the iframe on entry creation page
 
-console.log(document.querySelector('[refid=msg8066').contentDocument.getElementById("tableItems")) -> to get access to specific ids in the iframe
+console.log(document.querySelector('[refid=Form2DisplayFormCLR-26EMKIM401055916-1-SAD-SAD]').contentDocument.getElementById("Con12")) -> to get access to specific ids in the iframe

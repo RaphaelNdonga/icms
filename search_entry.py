@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-def search_entry(page:Page, entry_no:str):
+def search_entry(page:Page, entry_no:str, settled = False):
     page.goto("https://icms.kra.go.ke/e-biscus/dispatchAction.action?service=CR&menuReload=true")
 
     declaration_btn = page.locator("#menu112")
@@ -20,5 +20,9 @@ def search_entry(page:Page, entry_no:str):
     first_search_result = iframe.locator("#row0cell0Col9280")
     first_search_result.click()
 
-    process_btn = iframe.locator("#tbProcess").locator(".iconBtn")
-    process_btn.click()
+    if not settled:
+        process_btn = iframe.locator("#tbProcess").locator(".iconBtn")
+        process_btn.click()
+    else:
+        display_btn = iframe.locator("#tbDisplay").locator(".iconBtn")
+        display_btn.click()
