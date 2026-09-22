@@ -10,7 +10,8 @@
             "qty": "28",
             "unit_price": "279",
             "total_price": "7812"
-        }]
+        }],
+        "serial_number": "TI 000673"
     },
 
     "packing_list": {
@@ -39,6 +40,7 @@
         "place_of_delivery": "ICD Embakasi, Kenya"
     },
     "certificate_of_origin": {
+        "serial_number": "MCCMN100324",
         "consignor": {
             "name": "DECORTAGE SDN BHD",
             "address": "40160 SHAH ALAM SELANGOR MALAYSIA", 

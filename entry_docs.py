@@ -17,6 +17,7 @@ class Line_Item_CI:
 
 @dataclass
 class Commercial_Invoice:
+    serial_number: str
     incoterms: str
     currency: str
     fob_amount: str
@@ -65,6 +66,7 @@ class Party:
 
 @dataclass
 class CertificateOfOrigin:
+    serial_number: str
     consignor: Party
     consignee: Party
 
@@ -96,6 +98,7 @@ class ImportDeclarationForm:
 
 _commercial_invoice_data = entry_docs["commercial_invoice"]
 COMMERCIAL_INVOICE = Commercial_Invoice(
+    serial_number = _commercial_invoice_data["serial_number"],
     incoterms=_commercial_invoice_data["incoterms"],
     currency=_commercial_invoice_data["currency"],
     fob_amount=_commercial_invoice_data["fob_amount"],
@@ -126,6 +129,7 @@ BILL_OF_LADING = BillOfLading(**entry_docs["bill_of_lading"])
 _certificate_data = entry_docs["certificate_of_origin"]
 
 CERTIFICATE_OF_ORIGIN = CertificateOfOrigin(
+        serial_number = _certificate_data["serial_number"],
         consignor=Party(**_certificate_data["consignor"]),
         consignee=Party(**_certificate_data["consignee"]),
     )

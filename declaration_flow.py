@@ -6,6 +6,7 @@ from general_seg.movements_tab import movements_tab
 from general_seg.transport_tab import transport_tab
 from items_seg.details_tab import item_details_tab
 from items_seg.packages_tab import packages_tab
+from items_seg.attachments_tab import attachments_tab
 
 browser = launch_browser()
 page = icms_sign_in(browser)
@@ -47,5 +48,7 @@ lp_details = LpDetails(
     )
 
 packages_tab(page, 0, lp_details)
+
+attachments_tab(page)
 
 time.sleep(20)
