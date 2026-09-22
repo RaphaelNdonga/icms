@@ -6,6 +6,14 @@ entry_docs = {}
 with open("entry_docs.json", "r") as file:
     entry_docs = json.load(file)
 
+@dataclass
+class Line_Item_CI:
+    number: str
+    name: str
+    qty: str
+    unit_price: str
+    total_price: str
+
 
 @dataclass
 class Commercial_Invoice:
@@ -13,7 +21,27 @@ class Commercial_Invoice:
     currency: str
     fob_amount: str
     freight_amount: str
+    line_items: list[Line_Item_CI]
 
+@dataclass
+class Package:
+    type: str
+    code: str
+    qty: str
+
+@dataclass
+class Line_Item_PL:
+    number: str
+    name: str
+    qty: str
+    package: Package
+    total_gross_mass: str
+    total_net_mass: str
+
+
+@dataclass
+class PackingList:
+    line_items: list[Line_Item_PL]
 
 @dataclass
 class Insurance:
@@ -66,25 +94,27 @@ class ImportDeclarationForm:
     seller: Seller
     mode_of_transport: ModeOfTransport
 
-@dataclass
-class LpDetails:
-    unique_lp_no: str
-    type_of_pkg: str
-    declared_qty: str
-    gross_wt: str
-    comdty_code: str
-    mrks_pkgs: str
-    desc_goods: str
-    un_dangerous: str
-    country_origin: str
-    net_wt: str
-    temp: str
-    volume: str
-    volume_unit: str
-    container_ref: str
-    remarks: str
+_commercial_invoice_data = entry_docs["commercial_invoice"]
+COMMERCIAL_INVOICE = Commercial_Invoice(
+    incoterms=_commercial_invoice_data["incoterms"],
+    currency=_commercial_invoice_data["currency"],
+    fob_amount=_commercial_invoice_data["fob_amount"],
+    freight_amount=_commercial_invoice_data["freight_amount"],
+    line_items=[Line_Item_CI(**line_item) for line_item in _commercial_invoice_data["line_items"]],
+)
 
-COMMERCIAL_INVOICE = Commercial_Invoice(**entry_docs["commercial_invoice"])
+_packing_list_data = entry_docs["packing_list"]
+PACKING_LIST = PackingList(
+    line_items=[
+        Line_Item_PL(
+            **{
+                **line_item,
+                "package": Package(**line_item["package"]),
+            }
+        )
+        for line_item in _packing_list_data["line_items"]
+    ]
+)
 
 
 INSURANCE = Insurance(**entry_docs["insurance"])

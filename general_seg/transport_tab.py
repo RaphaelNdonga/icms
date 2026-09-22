@@ -1,7 +1,7 @@
 import time
-from utils import manual_type, manual_del
+from utils import LpDetails, manual_type, manual_del
 from playwright.sync_api import Page, Locator
-from entry_docs import BILL_OF_LADING, LpDetails
+from entry_docs import BILL_OF_LADING
 
 def transport_tab(page:Page, settled = False):
     iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
@@ -20,10 +20,7 @@ def transport_tab(page:Page, settled = False):
     summary_decl_page_btn = iframe.locator("#Field12431-Link_Button")
     summary_decl_page_btn.click()
     list_lp_details = fetch_summary_decl_info(iframe)
-
-    for lp in list_lp_details:
-        print(lp)
-        print("\n")
+    return list_lp_details
     
 
 def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:

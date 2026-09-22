@@ -82,3 +82,22 @@ class IcmsPage:
 ICMS = IcmsPage(login_page=LoginPage(url="https://icms.kra.go.ke/index.jsp", password_id="#passwd"))
 ICMSCAS = IcmsPage(login_page=LoginPage(url="https://icmscas.kra.go.ke/cas/login?service=https%3A%2F%2Ficms.kra.go.ke%2F", password_id="#password"))
 ICMS_PAGES = [ICMS, ICMSCAS]
+
+
+@dataclass
+class LpDetails:
+    unique_lp_no: str
+    type_of_pkg: str
+    declared_qty: str
+    gross_wt: str
+    comdty_code: str
+    mrks_pkgs: str
+    desc_goods: str
+    un_dangerous: str
+    country_origin: str
+    net_wt: str
+    temp: str
+    volume: str
+    volume_unit: str
+    container_ref: str
+    remarks: str
