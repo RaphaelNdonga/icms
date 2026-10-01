@@ -7,28 +7,30 @@ with open("entry_docs.json", "r") as file:
     entry_docs = json.load(file)
 
 @dataclass
+class Package:
+    type: str
+    code: str
+    qty: str
+
+@dataclass
 class Line_Item_CI:
     number: str
     name: str
     qty: str
     unit_price: str
     total_price: str
+    package: Package
 
 
 @dataclass
 class Commercial_Invoice:
     serial_number: str
-    incoterms: str
+    incoterm: str
     currency: str
     fob_amount: str
     freight_amount: str
     line_items: list[Line_Item_CI]
 
-@dataclass
-class Package:
-    type: str
-    code: str
-    qty: str
 
 @dataclass
 class Line_Item_PL:
@@ -54,6 +56,10 @@ class Insurance:
 class BillOfLading:
     no: str
     place_of_delivery: str
+    port_of_discharge: str
+    vessel: str
+    voyage_no: str
+
 
 
 @dataclass
@@ -92,6 +98,7 @@ class ModeOfTransport:
 class ImportDeclarationForm:
     no: str
     pin: str
+    incoterm: str
     importer: Importer
     seller: Seller
     mode_of_transport: ModeOfTransport
@@ -99,7 +106,7 @@ class ImportDeclarationForm:
 _commercial_invoice_data = entry_docs["commercial_invoice"]
 COMMERCIAL_INVOICE = Commercial_Invoice(
     serial_number = _commercial_invoice_data["serial_number"],
-    incoterms=_commercial_invoice_data["incoterms"],
+    incoterm=_commercial_invoice_data["incoterm"],
     currency=_commercial_invoice_data["currency"],
     fob_amount=_commercial_invoice_data["fob_amount"],
     freight_amount=_commercial_invoice_data["freight_amount"],
@@ -138,6 +145,7 @@ _declaration_data = entry_docs["import_declaration_form"]
 IMPORT_DECLARATION_FORM = ImportDeclarationForm(
         no=_declaration_data["no"],
         pin=_declaration_data["pin"],
+        incoterm = _declaration_data["incoterm"],
         importer=Importer(**_declaration_data["importer"]),
         seller=Seller(**_declaration_data["seller"]),
         mode_of_transport=ModeOfTransport(**_declaration_data["mode_of_transport"]),

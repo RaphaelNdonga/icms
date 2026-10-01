@@ -34,4 +34,6 @@ def movements_tab(page:Page):
     manual_type(page, place_of_unloading_region, CERTIFICATE_OF_ORIGIN.consignor.country_code)
     page.keyboard.press("Enter")
 
-
+    save_btn = iframe.locator("#tbSave").locator(".iconBtn")
+    save_btn.click()
+    time.sleep(5)

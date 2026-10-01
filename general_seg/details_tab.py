@@ -9,7 +9,7 @@ def details_tab(page:Page):
     tab.click()
     incoterm_code_input = iframe.locator("#sclist1099").locator("input").first
     manual_del(incoterm_code_input)
-    manual_type(page, incoterm_code_input, COMMERCIAL_INVOICE.incoterms)
+    manual_type(page, incoterm_code_input, COMMERCIAL_INVOICE.incoterm)
 
     named_place_input = iframe.locator("#Field8947").locator("input").first
     named_place_input.fill(BILL_OF_LADING.place_of_delivery)
@@ -55,7 +55,23 @@ def details_tab(page:Page):
     consignor_nation_input = iframe.locator("#sclist8000").locator("input").first
     manual_del(consignor_nation_input)
     manual_type(page, consignor_nation_input, CERTIFICATE_OF_ORIGIN.consignor.country_code)
+    
+    with page.expect_popup() as popup_info:
+        ref_number = iframe.locator("#Field8780").locator("input").last
+        ref_number.click()
 
-    save_btn = iframe.locator("#tbSave").locator(".iconBtn")
-    # save_btn.click()
+    new_page = popup_info.value
+    new_page.close()
 
+    with page.expect_popup() as popup_info:
+        ref_number = iframe.locator("#Field8780").locator("input").last
+        ref_number.click()
+
+    new_page = popup_info.value
+    new_page.close()
+
+    # Optional: visually bring the original tab to the front
+    page.bring_to_front()
+    page.keyboard.press("Enter")
+
+    time.sleep(5)

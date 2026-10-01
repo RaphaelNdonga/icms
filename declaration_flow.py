@@ -7,11 +7,22 @@ from general_seg.transport_tab import transport_tab
 from items_seg.details_tab import item_details_tab
 from items_seg.packages_tab import packages_tab
 from items_seg.attachments_tab import attachments_tab
+from create_entry import create_entry
 
 browser = launch_browser()
 page = icms_sign_in(browser)
 
-search_entry(page, "26EMKIM401078120")
+# IDF_NUMBER = "26MBAIM004065737"
+
+# entry_no = create_entry(page, IDF_NUMBER)
+
+# if not entry_no:
+#     browser.close()
+
+# print("Entry no: ", entry_no)
+
+entry_no = "26EMKIM401240252"
+search_entry(page, entry_no)
 # search_entry(page, "26EMKIM401055916", settled = True)
 details_tab(page)
 movements_tab(page)
@@ -29,26 +40,26 @@ item_details_tab(page, 0)
 #     print(lp)
 #     print("\n")
 
-lp_details = LpDetails(
-    unique_lp_no='2',
-    type_of_pkg='CT', 
-    declared_qty='456.000', 
-    gross_wt='13,008.000', 
-    comdty_code='9403500000', 
-    mrks_pkgs='N/M', 
-    desc_goods="2 X 40'HQ  CONTAINERS STC:-,932 CARTONS OF BEDROOM  ,FURNITURE,H.S.CODE 9403.50.0000,,,PLACE OF DELIVERY ICDE,", 
-    un_dangerous='', 
-    country_origin='MY', 
-    net_wt='13,008.000', 
-    temp='', 
-    volume='63.000', 
-    volume_unit='M3', 
-    container_ref='CSNU6373526', 
-    remarks=''
-    )
+# lp_details = LpDetails(
+#     unique_lp_no='2',
+#     type_of_pkg='CT', 
+#     declared_qty='456.000', 
+#     gross_wt='13,008.000', 
+#     comdty_code='9403500000', 
+#     mrks_pkgs='N/M', 
+#     desc_goods="2 X 40'HQ  CONTAINERS STC:-,932 CARTONS OF BEDROOM  ,FURNITURE,H.S.CODE 9403.50.0000,,,PLACE OF DELIVERY ICDE,", 
+#     un_dangerous='', 
+#     country_origin='MY', 
+#     net_wt='13,008.000', 
+#     temp='', 
+#     volume='63.000', 
+#     volume_unit='M3', 
+#     container_ref='CSNU6373526', 
+#     remarks=''
+#     )
 
-packages_tab(page, 0, lp_details)
+# packages_tab(page, 0, lp_details)
 
-attachments_tab(page)
+# attachments_tab(page)
 
-time.sleep(20)
+time.sleep(2000)

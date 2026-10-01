@@ -14,7 +14,7 @@ Output structure (replace the empty values and repeat line-item objects for ever
 
 {
   "commercial_invoice": {
-    "incoterms": "",
+    "incoterm": "",
     "currency": "",
     "fob_amount": "",
     "freight_amount": "",

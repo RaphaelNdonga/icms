@@ -1,0 +1,76 @@
+{
+    "commercial_invoice": {
+        "incoterm": "CFR",
+        "currency": "USD",
+        "fob_amount": "68802",
+        "freight_amount": "13",
+        "line_items": [{
+            "number": "1",
+            "name": "Gloria King Bed 183 × 203 cm",
+            "qty": "28",
+            "unit_price": "279",
+            "total_price": "7812"
+        }],
+        "serial_number": "TI 000673"
+    },
+
+    "packing_list": {
+        "line_items": [{
+            "number": "1",
+            "name": "Gloria King Bed 183 × 203 cm",
+            "qty": "28",
+            "package": {
+                "type": "Carton",
+                "code": "CT",
+                "qty": "112"
+            },
+            "total_gross_mass": "3332",
+            "total_net_mass": "3108"
+        }],
+        "total_containers_x_size": ["2x40"]
+    }
+    ,
+
+    "insurance": {
+        "currency": "USD",
+        "amount": "13"
+    },
+
+    "bill_of_lading": {
+        "no": "COSU6505593620",
+        "place_of_delivery": "ICD Embakasi, Kenya"
+    },
+    "certificate_of_origin": {
+        "serial_number": "MCCMN100324",
+        "consignor": {
+            "name": "DECORTAGE SDN BHD",
+            "address": "40160 SHAH ALAM SELANGOR MALAYSIA", 
+            "country": "Malaysia",
+            "country_code": "MY"
+        },
+        "consignee": {
+            "name": "Odds & Ends Limited",
+            "address": "11964 - 00400 NAIROBI KE", 
+            "country": "Kenya",
+            "country_code": "KE"
+        }
+    },
+    "import_declaration_form": {
+        "no": "26EMKIM000731139",
+        "pin": "P000617198L",
+        "incoterm": "CFR",
+        "importer": {
+            "name": "Odds & Ends Limited",
+            "address": "11964 - 00400 NAIROBI KE",
+            "county_code": "47"
+        },
+        "seller": {
+            "name": "DECORTAGE SDN BHD",
+            "address": "40160 SHAH ALAM SELANGOR MALAYSIA"
+        },
+        "mode_of_transport": {
+            "name": "Sea Transport",
+            "code": "1"
+        }
+    }
+}
