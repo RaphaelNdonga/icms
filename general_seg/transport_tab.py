@@ -17,6 +17,9 @@ def transport_tab(page:Page, settled = False):
         summary_decl_num = iframe.locator("#Field12431").locator("input").first
         summary_decl_num.fill(manifest_number)
 
+        search_tdid_btn = iframe.locator("#But8511")
+        search_tdid_btn.click()
+
     summary_decl_page_btn = iframe.locator("#Field12431-Link_Button")
     summary_decl_page_btn.click()
     list_lp_details = fetch_summary_decl_info(iframe)
@@ -96,4 +99,4 @@ def fetch_lp_details(modal_iframe: Locator):
 
 
 def fetch_manifest() -> str:
-    return "2026MSASI0111717"
+    return "2026MSASI0124333"

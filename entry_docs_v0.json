@@ -8,6 +8,11 @@
             "number": "1",
             "name": "Gloria King Bed 183 × 203 cm",
             "qty": "28",
+            "package": {
+                "type": "",
+                "code": "",
+                "qty": ""
+            },
             "unit_price": "279",
             "total_price": "7812"
         }],
@@ -38,7 +43,10 @@
 
     "bill_of_lading": {
         "no": "COSU6505593620",
-        "place_of_delivery": "ICD Embakasi, Kenya"
+        "place_of_delivery": "ICD Embakasi, Kenya",
+        "port_of_discharge": "Mombasa, KENYA",
+        "vessel": "MARIANNA I",
+        "voyage_no": "ZF630A"
     },
     "certificate_of_origin": {
         "serial_number": "MCCMN100324",

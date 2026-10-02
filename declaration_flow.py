@@ -24,21 +24,21 @@ page = icms_sign_in(browser)
 entry_no = "26EMKIM401240252"
 search_entry(page, entry_no)
 # search_entry(page, "26EMKIM401055916", settled = True)
-details_tab(page)
-movements_tab(page)
+# details_tab(page)
+# movements_tab(page)
 
-iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
+# iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
 
-items_radio = iframe.locator("#Field8462").locator("input")
-items_radio.click()
+# items_radio = iframe.locator("#Field8462").locator("input")
+# items_radio.click()
 
-item_details_tab(page, 0)
+# item_details_tab(page, 0)
 
 
-# list_lp_details = transport_tab(page, settled=True)
-# for lp in list_lp_details:
-#     print(lp)
-#     print("\n")
+list_lp_details = transport_tab(page)
+for lp in list_lp_details:
+    print(lp)
+    print("\n")
 
 # lp_details = LpDetails(
 #     unique_lp_no='2',
