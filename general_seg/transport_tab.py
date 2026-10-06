@@ -44,12 +44,12 @@ def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:
         current_row = row.nth(i)
         current_row.click()
         print("Current row: ", current_row)
-        uniq_lp_ref = row.locator("td").nth(1).locator(".refdiv").text_content()
-        description_goods = row.locator("td").nth(4).locator(".refdiv").text_content()
-        declared_qty = row.locator("td").nth(5).locator(".refdiv").text_content()
-        gross_wt = row.locator("td").nth(6).locator(".refdiv").text_content()
-        actual_qty = row.locator("td").nth(7).locator(".refdiv").text_content()
-        actual_wt = row.locator("td").nth(8).locator(".refdiv").text_content()
+        uniq_lp_ref = current_row.locator("td").nth(1).locator(".refdiv").text_content()
+        description_goods = current_row.locator("td").nth(4).locator(".refdiv").text_content()
+        declared_qty = current_row.locator("td").nth(5).locator(".refdiv").text_content()
+        gross_wt = current_row.locator("td").nth(6).locator(".refdiv").text_content()
+        actual_qty = current_row.locator("td").nth(7).locator(".refdiv").text_content()
+        actual_wt = current_row.locator("td").nth(8).locator(".refdiv").text_content()
 
         lp_details = LpDetails(
             uniq_lp_ref=uniq_lp_ref,
