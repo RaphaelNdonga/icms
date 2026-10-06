@@ -86,18 +86,10 @@ ICMS_PAGES = [ICMS, ICMSCAS]
 
 @dataclass
 class LpDetails:
-    unique_lp_no: str
-    type_of_pkg: str
+    uniq_lp_ref: str
+    description_goods: str
     declared_qty: str
     gross_wt: str
-    comdty_code: str
-    mrks_pkgs: str
-    desc_goods: str
-    un_dangerous: str
-    country_origin: str
-    net_wt: str
-    temp: str
-    volume: str
-    volume_unit: str
-    container_ref: str
-    remarks: str
+    actual_qty: str
+    actual_wt: str
+    container_no: str

@@ -1,3 +1,4 @@
+import json
 import time
 from utils import launch_browser, icms_sign_in, LpDetails
 from search_entry import search_entry
@@ -8,6 +9,7 @@ from items_seg.details_tab import item_details_tab
 from items_seg.packages_tab import packages_tab
 from items_seg.attachments_tab import attachments_tab
 from create_entry import create_entry
+from dataclasses import asdict
 
 browser = launch_browser()
 page = icms_sign_in(browser)
@@ -21,9 +23,9 @@ page = icms_sign_in(browser)
 
 # print("Entry no: ", entry_no)
 
-entry_no = "26EMKIM401240252"
-search_entry(page, entry_no)
-# search_entry(page, "26EMKIM401055916", settled = True)
+# entry_no = "26EMKIM401240252"
+# search_entry(page, entry_no)
+search_entry(page, "26EMKIM401236921", settled = True)
 # details_tab(page)
 # movements_tab(page)
 
@@ -35,28 +37,12 @@ search_entry(page, entry_no)
 # item_details_tab(page, 0)
 
 
-list_lp_details = transport_tab(page)
-for lp in list_lp_details:
-    print(lp)
-    print("\n")
+list_lp_details = transport_tab(page, settled=True)
 
-# lp_details = LpDetails(
-#     unique_lp_no='2',
-#     type_of_pkg='CT', 
-#     declared_qty='456.000', 
-#     gross_wt='13,008.000', 
-#     comdty_code='9403500000', 
-#     mrks_pkgs='N/M', 
-#     desc_goods="2 X 40'HQ  CONTAINERS STC:-,932 CARTONS OF BEDROOM  ,FURNITURE,H.S.CODE 9403.50.0000,,,PLACE OF DELIVERY ICDE,", 
-#     un_dangerous='', 
-#     country_origin='MY', 
-#     net_wt='13,008.000', 
-#     temp='', 
-#     volume='63.000', 
-#     volume_unit='M3', 
-#     container_ref='CSNU6373526', 
-#     remarks=''
-#     )
+lp_json = json.dumps([asdict(lp) for lp in list_lp_details], indent=2)
+
+with open("lp.json", "w") as file:
+    file.write(lp_json)
 
 # packages_tab(page, 0, lp_details)
 

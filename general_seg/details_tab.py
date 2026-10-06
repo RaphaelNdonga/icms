@@ -3,7 +3,7 @@ from utils import manual_type, manual_del
 from playwright.sync_api import Page
 from entry_docs import COMMERCIAL_INVOICE, BILL_OF_LADING, IMPORT_DECLARATION_FORM, CERTIFICATE_OF_ORIGIN, INSURANCE
 
-def details_tab(page:Page):
+def details_tab(page:Page, settled = False):
     iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
     tab = iframe.locator(".tabs-back-div").locator("div[title=Details]")
     tab.click()
@@ -56,22 +56,23 @@ def details_tab(page:Page):
     manual_del(consignor_nation_input)
     manual_type(page, consignor_nation_input, CERTIFICATE_OF_ORIGIN.consignor.country_code)
     
-    with page.expect_popup() as popup_info:
-        ref_number = iframe.locator("#Field8780").locator("input").last
-        ref_number.click()
+    if not settled:
+        with page.expect_popup() as popup_info:
+            ref_number = iframe.locator("#Field8780").locator("input").last
+            ref_number.click()
 
-    new_page = popup_info.value
-    new_page.close()
+        new_page = popup_info.value
+        new_page.close()
 
-    with page.expect_popup() as popup_info:
-        ref_number = iframe.locator("#Field8780").locator("input").last
-        ref_number.click()
+        with page.expect_popup() as popup_info:
+            ref_number = iframe.locator("#Field8780").locator("input").last
+            ref_number.click()
 
-    new_page = popup_info.value
-    new_page.close()
+        new_page = popup_info.value
+        new_page.close()
 
-    # Optional: visually bring the original tab to the front
-    page.bring_to_front()
-    page.keyboard.press("Enter")
+        # Optional: visually bring the original tab to the front
+        page.bring_to_front()
+        page.keyboard.press("Enter")
 
     time.sleep(5)

@@ -44,58 +44,46 @@ def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:
         current_row = row.nth(i)
         current_row.click()
         print("Current row: ", current_row)
+        uniq_lp_ref = row.locator("td").nth(1).locator(".refdiv").text_content()
+        description_goods = row.locator("td").nth(4).locator(".refdiv").text_content()
+        declared_qty = row.locator("td").nth(5).locator(".refdiv").text_content()
+        gross_wt = row.locator("td").nth(6).locator(".refdiv").text_content()
+        actual_qty = row.locator("td").nth(7).locator(".refdiv").text_content()
+        actual_wt = row.locator("td").nth(8).locator(".refdiv").text_content()
+
+        lp_details = LpDetails(
+            uniq_lp_ref=uniq_lp_ref,
+            description_goods=description_goods,
+            declared_qty=declared_qty,
+            gross_wt=gross_wt,
+            actual_qty=actual_qty,
+            actual_wt = actual_wt,
+            container_no=""
+        )
+
+
         display_lp_btn = iframe.locator("#But417")
         display_lp_btn.click()
         fancy_box_opened = iframe.locator(".fancybox-opened")
         fancy_box_opened.wait_for(state="attached")
 
         modal_iframe = iframe.frame_locator(".fancybox-iframe")
-        lp_details = fetch_lp_details(modal_iframe)
+        lp_details = fetch_lp_details(modal_iframe, lp_details)
         list_lp_details.append(lp_details)
         close_btn = iframe.locator(".fancybox-close")
         close_btn.click()
         close_btn.wait_for(state="hidden")
         row.nth(0).click()
-        
-
+        print("lp details: ", lp_details)
 
     return list_lp_details
 
 
-def fetch_lp_details(modal_iframe: Locator):
-    unique_lp_no = modal_iframe.locator("#Field235").locator("input").input_value()
-    type_of_pkg = modal_iframe.locator("#sclist60").locator("input").first.input_value()
-    declared_qty = modal_iframe.locator("#Field96").locator("input").input_value()
-    gross_wt = modal_iframe.locator("#Field97").locator("input").input_value()
-    comdty_code = modal_iframe.locator("#Field236").locator("input").input_value()
-    mrks_pkgs = modal_iframe.locator("#Field98").locator("textarea").input_value()
-    desc_goods = modal_iframe.locator("#Field101").locator("textarea").input_value()
-    un_dangerous = modal_iframe.locator("#List237").locator("input").first.input_value()
-    country_origin = modal_iframe.locator("#KRA_Field_origin_country_id").locator("input").first.input_value()
-    net_wt = modal_iframe.locator("#KRA_Field_net_weight_status_id").locator("input").input_value()
-    temp = modal_iframe.locator("#KRA_Field_temperature_id").locator("input").input_value()
-    volume = modal_iframe.locator("#KRA_Field_volume_id").locator("input").input_value()
-    volume_unit = modal_iframe.locator("#List238").locator("input").first.input_value()
+def fetch_lp_details(modal_iframe: Locator, lp_details: LpDetails):
     container_ref = modal_iframe.locator("#KRA_Field_container_reference_id").locator("input").input_value()
-    remarks = modal_iframe.locator("#KRA_Field_remarks").locator("textarea").input_value()
+    lp_details.container_no = container_ref
 
-    return LpDetails(
-        unique_lp_no=unique_lp_no,
-        type_of_pkg=type_of_pkg,
-        declared_qty=declared_qty,
-        gross_wt=gross_wt,
-        comdty_code=comdty_code,
-        mrks_pkgs=mrks_pkgs,
-        desc_goods=desc_goods,
-        un_dangerous=un_dangerous,
-        country_origin=country_origin,
-        net_wt=net_wt,
-        temp=temp,
-        volume=volume,
-        volume_unit=volume_unit,
-        container_ref=container_ref,
-        remarks=remarks,
-    )
+    return lp_details
 
 
 def fetch_manifest() -> str:

@@ -16,13 +16,13 @@ def packages_tab(page: Page, line_item_index: int, lp_details: LpDetails):
     declared_qty_input = iframe.locator("#Field11043").locator("input")
     declared_qty_input.fill(PACKING_LIST.line_items[line_item_index].package.qty)
     marks_input = iframe.locator("#Field11044").locator("input")
-    marks_description = f"1 x {lp_details.container_ref}"
+    marks_description = f"1 x {lp_details.container_no}"
     marks_input.fill(marks_description)
     gross_mass_input = iframe.locator("#Field11045").locator("input")
     gross_mass_input.fill(PACKING_LIST.line_items[line_item_index].total_gross_mass)
     description_input = iframe.locator("#Field11046").locator("input")
     description_input.fill(PACKING_LIST.line_items[line_item_index].name)
     unique_lp_ref_input = iframe.locator("#Unique_LP").locator("input")
-    unique_lp_ref_input.fill(lp_details.unique_lp_no)
+    unique_lp_ref_input.fill(lp_details.uniq_lp_ref)
 
     
