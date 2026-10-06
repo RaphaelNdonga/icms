@@ -93,3 +93,33 @@ class LpDetails:
     actual_qty: str
     actual_wt: str
     container_no: str
+
+def gradual_top_bottom_scroll(scrollable_list:Locator):
+    scrollable_list.evaluate("""
+        element => {
+            element.scrollTop = element.scrollHeight;
+        }
+    """)
+    time.sleep(1)
+    scrollable_list.evaluate("""
+        element => {
+            element.scrollTop = 0;
+        }
+    """)   
+    time.sleep(1)
+    while True:
+        previous_top = scrollable_list.evaluate("el => el.scrollTop")
+
+        scrollable_list.evaluate("""
+            element => {
+                element.scrollTop += 100;
+            }
+        """)
+
+        time.sleep(0.2)
+
+        current_top = scrollable_list.evaluate("el => el.scrollTop")
+
+        if current_top == previous_top:
+            break
+

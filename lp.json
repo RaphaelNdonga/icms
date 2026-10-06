@@ -106,5 +106,383 @@
     "actual_qty": "26.00",
     "actual_wt": "1,041.00",
     "container_no": "CAIU8567100"
+  },
+  {
+    "uniq_lp_ref": "2",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "433.000",
+    "gross_wt": "17,330.000",
+    "actual_qty": "40.00",
+    "actual_wt": "1,380.60",
+    "container_no": "CAIU8567100"
+  },
+  {
+    "uniq_lp_ref": "2",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "433.000",
+    "gross_wt": "17,330.000",
+    "actual_qty": "0.00",
+    "actual_wt": "120.00",
+    "container_no": "CAIU8567100"
+  },
+  {
+    "uniq_lp_ref": "2",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "433.000",
+    "gross_wt": "17,330.000",
+    "actual_qty": "0.00",
+    "actual_wt": "100.40",
+    "container_no": "CAIU8567100"
+  },
+  {
+    "uniq_lp_ref": "2",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "433.000",
+    "gross_wt": "17,330.000",
+    "actual_qty": "17.00",
+    "actual_wt": "680.00",
+    "container_no": "CAIU8567100"
+  },
+  {
+    "uniq_lp_ref": "3",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "125.000",
+    "gross_wt": "920.000",
+    "actual_qty": "25.00",
+    "actual_wt": "184.00",
+    "container_no": "MSBU7600632"
+  },
+  {
+    "uniq_lp_ref": "3",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "125.000",
+    "gross_wt": "920.000",
+    "actual_qty": "75.00",
+    "actual_wt": "552.00",
+    "container_no": "MSBU7600632"
+  },
+  {
+    "uniq_lp_ref": "3",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "125.000",
+    "gross_wt": "920.000",
+    "actual_qty": "25.00",
+    "actual_wt": "184.00",
+    "container_no": "MSBU7600632"
+  },
+  {
+    "uniq_lp_ref": "4",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "14,510.000",
+    "actual_qty": "78.00",
+    "actual_wt": "4,639.00",
+    "container_no": "MSBU6925361"
+  },
+  {
+    "uniq_lp_ref": "4",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "14,510.000",
+    "actual_qty": "50.00",
+    "actual_wt": "2,973.00",
+    "container_no": "MSBU6925361"
+  },
+  {
+    "uniq_lp_ref": "4",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "14,510.000",
+    "actual_qty": "116.00",
+    "actual_wt": "6,898.00",
+    "container_no": "MSBU6925361"
+  },
+  {
+    "uniq_lp_ref": "5",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "269.000",
+    "gross_wt": "14,150.000",
+    "actual_qty": "83.00",
+    "actual_wt": "4,366.00",
+    "container_no": "CAIU9489759"
+  },
+  {
+    "uniq_lp_ref": "5",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "269.000",
+    "gross_wt": "14,150.000",
+    "actual_qty": "50.00",
+    "actual_wt": "2,630.00",
+    "container_no": "CAIU9489759"
+  },
+  {
+    "uniq_lp_ref": "5",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "269.000",
+    "gross_wt": "14,150.000",
+    "actual_qty": "50.00",
+    "actual_wt": "2,630.00",
+    "container_no": "CAIU9489759"
+  },
+  {
+    "uniq_lp_ref": "5",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "269.000",
+    "gross_wt": "14,150.000",
+    "actual_qty": "2.00",
+    "actual_wt": "105.00",
+    "container_no": "CAIU9489759"
+  },
+  {
+    "uniq_lp_ref": "5",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "269.000",
+    "gross_wt": "14,150.000",
+    "actual_qty": "84.00",
+    "actual_wt": "4,419.00",
+    "container_no": "CAIU9489759"
+  },
+  {
+    "uniq_lp_ref": "6",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "178.000",
+    "gross_wt": "12,140.000",
+    "actual_qty": "178.00",
+    "actual_wt": "12,140.00",
+    "container_no": "MSBU7600632"
+  },
+  {
+    "uniq_lp_ref": "7",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "13,910.000",
+    "actual_qty": "240.00",
+    "actual_wt": "13,910.00",
+    "container_no": "MSCU5386320"
+  },
+  {
+    "uniq_lp_ref": "8",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "13,890.000",
+    "actual_qty": "240.00",
+    "actual_wt": "13,890.00",
+    "container_no": "CAAU8078323"
+  },
+  {
+    "uniq_lp_ref": "9",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "15,790.000",
+    "actual_qty": "240.00",
+    "actual_wt": "15,790.00",
+    "container_no": "MSNU9163122"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "50.00",
+    "actual_wt": "3,086.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "0.00",
+    "actual_wt": "117.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "0.00",
+    "actual_wt": "86.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "132.00",
+    "actual_wt": "8,683.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "50.00",
+    "actual_wt": "2,914.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "0.00",
+    "actual_wt": "215.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "0.00",
+    "actual_wt": "160.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "10",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "244.000",
+    "gross_wt": "16,050.000",
+    "actual_qty": "12.00",
+    "actual_wt": "789.00",
+    "container_no": "MSBU7023417"
+  },
+  {
+    "uniq_lp_ref": "11",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "158.000",
+    "gross_wt": "9,090.000",
+    "actual_qty": "158.00",
+    "actual_wt": "9,090.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "12",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "15,840.000",
+    "actual_qty": "240.00",
+    "actual_wt": "15,840.00",
+    "container_no": "FFAU2958074"
+  },
+  {
+    "uniq_lp_ref": "13",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "13,920.000",
+    "actual_qty": "240.00",
+    "actual_wt": "13,920.00",
+    "container_no": "MEDU7744990"
+  },
+  {
+    "uniq_lp_ref": "14",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "13,890.000",
+    "actual_qty": "240.00",
+    "actual_wt": "13,890.00",
+    "container_no": "MSMU6946558"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "75.00",
+    "actual_wt": "767.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "40.00",
+    "actual_wt": "409.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "50.00",
+    "actual_wt": "511.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "40.00",
+    "actual_wt": "409.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "50.00",
+    "actual_wt": "511.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "25.00",
+    "actual_wt": "256.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "30.00",
+    "actual_wt": "307.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "30.00",
+    "actual_wt": "307.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "15",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "360.000",
+    "gross_wt": "3,680.000",
+    "actual_qty": "20.00",
+    "actual_wt": "203.00",
+    "container_no": "TGBU9601353"
+  },
+  {
+    "uniq_lp_ref": "16",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "13,870.000",
+    "actual_qty": "240.00",
+    "actual_wt": "13,870.00",
+    "container_no": "FFAU3985201"
+  },
+  {
+    "uniq_lp_ref": "17",
+    "description_goods": "FOB QINGDAO PORT OF CHINA (INCOTERMS 2020) NEW PNEUMATIC AGATE/ GALLANT/HIFLY/ROADWING BRAND TYRES AS PER PROFORMA INVOICE NO. 26HFAXP025+CFAXP025 DATED JUNE 08, 2026. IDF NO.  26MBAIM004065737 L/C NO.  001IMLC22600966 PKG=PCS",
+    "declared_qty": "240.000",
+    "gross_wt": "15,760.000",
+    "actual_qty": "240.00",
+    "actual_wt": "15,760.00",
+    "container_no": "CAAU8030443"
   }
 ]

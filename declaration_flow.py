@@ -39,6 +39,8 @@ search_entry(page, "26EMKIM401236921", settled = True)
 
 list_lp_details = transport_tab(page, settled=True)
 
+print("lp items: ", len(list_lp_details))
+
 lp_json = json.dumps([asdict(lp) for lp in list_lp_details], indent=2)
 
 with open("lp.json", "w") as file:

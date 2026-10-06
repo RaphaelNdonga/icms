@@ -1,5 +1,5 @@
 import time
-from utils import LpDetails, manual_type, manual_del
+from utils import LpDetails, manual_type, manual_del, gradual_top_bottom_scroll
 from playwright.sync_api import Page, Locator
 from entry_docs import BILL_OF_LADING
 
@@ -32,7 +32,7 @@ def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:
     lp_table.click()
 
     visual_data_container = lp_table.locator(".VISUAL_DATACONTAINER")
-    visual_data_container.evaluate("(el) => el.scrollTop = el.scrollHeight")
+    gradual_top_bottom_scroll(visual_data_container) 
 
     row = visual_data_container.locator(".row")
 

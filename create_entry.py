@@ -1,5 +1,5 @@
 import time
-from utils import launch_browser, icms_sign_in, manual_type
+from utils import launch_browser, icms_sign_in, manual_type, gradual_top_bottom_scroll
 from playwright.sync_api import Page, expect, Locator
 
 def create_entry(page:Page, idf_no: str):
@@ -43,7 +43,7 @@ def create_entry(page:Page, idf_no: str):
     time.sleep(3)
 
     scrollable_list = iframe.locator("#tableItems").locator(".VISUAL_DATACONTAINER")
-    gradual_top_bottom_scroll(page, scrollable_list)
+    gradual_top_bottom_scroll(scrollable_list)
 
     select_switch = iframe.locator("#selectSwitch")
     select_switch.click()
@@ -63,33 +63,4 @@ def create_entry(page:Page, idf_no: str):
     entry_no = declaration_no.locator("input").first.input_value()
 
     return entry_no
-
-def gradual_top_bottom_scroll(page: Page, scrollable_list:Locator):
-    scrollable_list.evaluate("""
-        element => {
-            element.scrollTop = element.scrollHeight;
-        }
-    """)
-    time.sleep(1)
-    scrollable_list.evaluate("""
-        element => {
-            element.scrollTop = 0;
-        }
-    """)   
-    time.sleep(1)
-    while True:
-        previous_top = scrollable_list.evaluate("el => el.scrollTop")
-
-        scrollable_list.evaluate("""
-            element => {
-                element.scrollTop += 100;
-            }
-        """)
-
-        page.wait_for_timeout(200)
-
-        current_top = scrollable_list.evaluate("el => el.scrollTop")
-
-        if current_top == previous_top:
-            break
 
