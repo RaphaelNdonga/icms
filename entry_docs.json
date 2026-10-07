@@ -343,7 +343,7 @@
       }
     ],
     "serial_number": "26HFAXP025-2+CFAXP025-2",
-    "extraction_remarks": "Commercial invoice p. 1 FOB amount differs from the IDF shipment FOB value; invoice row 18 lists AGATE ST011 while IDF row 29 lists the same size with pattern HF768, and the IDF includes additional products."
+    "extraction_remarks": ""
   },
   "packing_list": {
     "line_items": [
@@ -380,8 +380,8 @@
           "code": "PP",
           "qty": "240"
         },
-        "total_gross_mass": "15840",
-        "total_net_mass": "15840"
+        "total_gross_mass": "15790",
+        "total_net_mass": "15790"
       },
       {
         "number": "4",
@@ -392,8 +392,8 @@
           "code": "PP",
           "qty": "240"
         },
-        "total_gross_mass": "15840",
-        "total_net_mass": "15840"
+        "total_gross_mass": "15760",
+        "total_net_mass": "15760"
       },
       {
         "number": "5",
@@ -412,8 +412,8 @@
         "name": "AGATE 8.25R20 16PR 139/137 L HF702",
         "qty": "50",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "50"
         },
         "total_gross_mass": "16050",
@@ -424,8 +424,8 @@
         "name": "AGATE 12.00R24 20PR 160/157 K HF702",
         "qty": "50",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "50"
         },
         "total_gross_mass": "16050",
@@ -577,7 +577,7 @@
       },
       {
         "number": "20",
-        "name": "GALLANT 315/80R22.5 20PR 156/152(154/151) L (M) GL601",
+        "name": "GALLANT 315/80R22.5 20PR 156/152(154/151) L (M) GL602",
         "qty": "84",
         "package": {
           "type": "piece",
@@ -592,8 +592,8 @@
         "name": "AGATE 7.00R16LT 14PR 118/114 M HF702",
         "qty": "200",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "200"
         },
         "total_gross_mass": "17330",
@@ -604,8 +604,8 @@
         "name": "AGATE 8.25R16LT 16PR 128/124 M HF702",
         "qty": "50",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "50"
         },
         "total_gross_mass": "17330",
@@ -616,8 +616,8 @@
         "name": "AGATE 11.00R20 18PR 152/149 K HF702",
         "qty": "50",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "50"
         },
         "total_gross_mass": "17330",
@@ -652,8 +652,8 @@
         "name": "GALLANT 10.00R20 18PR 149/146 K GL901",
         "qty": "40",
         "package": {
-          "type": "set",
-          "code": "SX",
+          "type": "piece",
+          "code": "PP",
           "qty": "40"
         },
         "total_gross_mass": "17330",
@@ -680,8 +680,8 @@
           "code": "PP",
           "qty": "158"
         },
-        "total_gross_mass": "17330",
-        "total_net_mass": "17330"
+        "total_gross_mass": "12770",
+        "total_net_mass": "12770"
       },
       {
         "number": "29",
@@ -855,7 +855,7 @@
     "total_containers_x_size": [
       "15x40'HQ"
     ],
-    "extraction_remarks": "Packing list p. 1 does not distinguish gross from net container weights; the same printed weight is assigned to both fields for products sharing each container. Item-level package units were borrowed from matching commercial-invoice products for rows 1–42; these are quantity-unit fallbacks, not stated physical packaging. The 4171 PCS shipment total does not establish an item-level unit. Packing-list AGATE ST011 quantities differ from IDF rows 28–29, which list different quantities and patterns; packing-list GALLANT GL601 quantities differ from IDF row 45."
+    "extraction_remarks": ""
   },
   "certificate_of_origin": {
     "serial_number": "CCPIT5122600016545",
