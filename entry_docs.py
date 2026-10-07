@@ -38,6 +38,7 @@ class Line_Item_PL:
     name: str
     qty: str
     package: Package
+    container_no: str
     total_gross_mass: str
     total_net_mass: str
 

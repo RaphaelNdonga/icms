@@ -778,7 +778,7 @@
       },
       {
         "number": "34",
-        "name": "HIFLY LT255/70R15 6PR 107/103 S VIGOROUS AT601",
+        "name": "HIFLY LT225/70R15 6PR 107/103 S VIGOROUS AT601",
         "qty": "25",
         "package": {
           "type": "piece",
@@ -897,7 +897,7 @@
     "total_containers_x_size": [
       "15x40'HQ"
     ],
-    "extraction_remarks": "After visual reinspection of both documents, packing-list items 6, 7, 21–23 and 26 use the table's stated PCS unit, whereas corresponding invoice items 15, 19, 13, 14, 16 and 21 respectively state SETS (packing_list.pdf and commercial_invoice.pdf, page 1)."
+    "extraction_remarks": "Package type differs from the invoice for the corresponding rows to invoice items 13–16, 19, and 21: invoice states SETS, while the packing-list quantity total is PCS; packing-list values are preserved as pieces."
   },
   "certificate_of_origin": {
     "serial_number": "CCPIT5122600016545",

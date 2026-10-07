@@ -52,6 +52,7 @@ def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:
         actual_wt = current_row.locator("td").nth(8).locator(".refdiv").text_content()
 
         lp_details = LpDetails(
+            number=str(i + 1),
             uniq_lp_ref=uniq_lp_ref,
             description_goods=description_goods,
             declared_qty=declared_qty,
@@ -74,7 +75,6 @@ def fetch_summary_decl_info(iframe:Locator) -> list[LpDetails]:
         close_btn.click()
         close_btn.wait_for(state="hidden")
         row.nth(0).click()
-        print("lp details: ", lp_details)
 
     return list_lp_details
 

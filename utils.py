@@ -86,6 +86,7 @@ ICMS_PAGES = [ICMS, ICMSCAS]
 
 @dataclass
 class LpDetails:
+    number: str
     uniq_lp_ref: str
     description_goods: str
     declared_qty: str
