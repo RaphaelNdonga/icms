@@ -1,8 +1,9 @@
-from utils import LpDetails, manual_type
+from utils import manual_type
 from playwright.sync_api import Page
 from entry_docs import PACKING_LIST
+from generation_models import EntryPackage
 
-def packages_tab(page: Page, line_item_index: int, lp_details: LpDetails):
+def packages_tab(page: Page, line_item_index: int, entry_pkg = EntryPackage):
     iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
     tab = iframe.locator(".tabs-back-div").locator("div[title=Packages]")
     tab.click()
@@ -12,17 +13,17 @@ def packages_tab(page: Page, line_item_index: int, lp_details: LpDetails):
     row = iframe.locator(".DATACONTAINER").locator(".row").last
     row.click()
     type_package_input = iframe.locator("#sclist1058").locator("input").first
-    manual_type(page, type_package_input, PACKING_LIST.line_items[line_item_index].package.code)
+    manual_type(page, type_package_input, entry_pkg.code)
     declared_qty_input = iframe.locator("#Field11043").locator("input")
-    declared_qty_input.fill(PACKING_LIST.line_items[line_item_index].package.qty)
+    declared_qty_input.fill(entry_pkg.qty)
     marks_input = iframe.locator("#Field11044").locator("input")
-    marks_description = f"1 x {lp_details.container_no}"
+    marks_description = f"1 x {entry_pkg.marks}"
     marks_input.fill(marks_description)
     gross_mass_input = iframe.locator("#Field11045").locator("input")
-    gross_mass_input.fill(PACKING_LIST.line_items[line_item_index].total_gross_mass)
+    gross_mass_input.fill(entry_pkg.lp_actual_wt)
     description_input = iframe.locator("#Field11046").locator("input")
-    description_input.fill(PACKING_LIST.line_items[line_item_index].name)
+    description_input.fill(entry_pkg.description)
     unique_lp_ref_input = iframe.locator("#Unique_LP").locator("input")
-    unique_lp_ref_input.fill(lp_details.uniq_lp_ref)
+    unique_lp_ref_input.fill(entry_pkg.uniq_lp)
 
     

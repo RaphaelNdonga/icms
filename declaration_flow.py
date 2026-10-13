@@ -10,6 +10,7 @@ from items_seg.packages_tab import packages_tab
 from items_seg.attachments_tab import attachments_tab
 from create_entry import create_entry
 from dataclasses import asdict
+from generation_models import ENTRY_ITEMS
 
 browser = launch_browser()
 page = icms_sign_in(browser)
@@ -23,31 +24,44 @@ page = icms_sign_in(browser)
 
 # print("Entry no: ", entry_no)
 
-# entry_no = "26EMKIM401240252"
-# search_entry(page, entry_no)
-search_entry(page, "26EMKIM401236921", settled = True)
+print("entry items length: ", len(ENTRY_ITEMS.entry_items))
+
+entry_no = "26EMKIM401240252"
+search_entry(page, entry_no)
+# search_entry(page, "26EMKIM401236921", settled = True)
 # details_tab(page)
 # movements_tab(page)
 
-# iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
+for i in range(len(ENTRY_ITEMS.entry_items)):
+    entry_item = ENTRY_ITEMS.entry_items[i]
 
-# items_radio = iframe.locator("#Field8462").locator("input")
-# items_radio.click()
+    iframe = page.locator("#form-tabs-iframeArea").frame_locator("iframe").last
 
-# item_details_tab(page, 0)
+    items_radio = iframe.locator("#Field8462").locator("input")
+    items_radio.click()
+
+    item_details_tab(page, i)
+
+    entry_pkgs = entry_item.packages
+    for i in range(len(entry_pkgs)):
+        packages_tab(page, i, entry_pkgs[i])
+
+    if i == 0:
+        attachments_tab(page)
+
+    time.sleep(200)
 
 
-list_lp_details = transport_tab(page, settled=True)
 
-print("lp items: ", len(list_lp_details))
 
-lp_json = json.dumps([asdict(lp) for lp in list_lp_details], indent=2)
+# list_lp_details = transport_tab(page, settled=True)
 
-with open("lp.json", "w") as file:
-    file.write(lp_json)
+# print("lp items: ", len(list_lp_details))
 
-# packages_tab(page, 0, lp_details)
+# lp_json = json.dumps([asdict(lp) for lp in list_lp_details], indent=2)
 
-# attachments_tab(page)
+# with open("lp.json", "w") as file:
+#     file.write(lp_json)
+
 
 time.sleep(2000)
