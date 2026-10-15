@@ -69,6 +69,9 @@ def attachments_tab(page:Page):
         submit_btn.click()
         submit_btn.wait_for(state="detached")
 
+    save_btn = iframe.locator("#tbSave").locator(".iconBtn")
+    save_btn.click()
+
 
 
 

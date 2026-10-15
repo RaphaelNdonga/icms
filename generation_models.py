@@ -39,6 +39,15 @@ _entry_items_data = entry_items["items"]
 
 ENTRY_ITEMS = EntryItems(
     entry_items=[
-        EntryItem(**entry_item) for entry_item in _entry_items_data
+        EntryItem(
+            **{
+                **entry_item,
+                "packages": [
+                    EntryPackage(**entry_pkg)
+                    for entry_pkg in entry_item["packages"]
+                ],
+            }
+        )
+        for entry_item in _entry_items_data
     ]
 )
